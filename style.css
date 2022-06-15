@@ -58,6 +58,8 @@ body {
     width: 100%;
     margin: 0 auto;
     background: var(--color-white);
+    /* background: linear-gradient(to right, #005aa7, #fffde4); */
+
     gap: 1.8rem;
     grid-template-columns: 14rem auto 23rem;
 }
@@ -133,11 +135,11 @@ b {
 
 aside {
     height: 100vh;
-    background: #ec6e39;
+    background: transparent;
 }
 
 aside .top {
-    background-color: #88f588;
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -148,6 +150,9 @@ aside .logo {
     display: flex;
     gap: 0.8rem;
 }
+aside .logo h3 {
+    font-size: 20px;
+  }
 
 aside .logo img {
     width: 4rem;
@@ -161,7 +166,7 @@ aside .close {
 /****** SIDEBAR  ******/
 
 aside .sidebar {
-    background-color: #FFFFEC;
+    background: var(--color-white);
     display: flex;
     flex-direction: column;
     height: 85vh;
@@ -266,7 +271,7 @@ main .insights>div {
 }
 
 main .insights>div:hover {
-    background: #fdf4a5;
+    background: linear-gradient(to right, #a3cef3, #fffde4);
     box-shadow: none;
 }
 
@@ -362,12 +367,12 @@ main .recent-orders table{
     padding: var(--card-padding);
     text-align: center;
     box-shadow: var(--box-shadow);
-    transition: all 0.3ms ease;
+    transition: all .3s ease;
 }
 
 main .recent-orders table:hover{
    box-shadow: none;
-   background:#fdf4a5;
+   background: linear-gradient(to right, #a3cef3, #fffde4);
 }
 
 main table tbody td{
@@ -454,10 +459,47 @@ margin-top: 1rem;
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
-    transition: all .3ms ease;
+    transition: all .3s ease;
 }
 
 .right .recent-updates .updates:hover{
     box-shadow: none;
-    background: #fdf4a5;
+    background: linear-gradient(to right, #a3cef3, #fffde4);
+}
+
+.right .recent-updates .updates .updates{
+    display: grid;
+    grid-template-columns: 3.4rem auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* SALES ANALYSIS */
+
+.right .sales-analysis{
+    margin-top: 3rem;
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    display: grid;
+}
+
+.right .sales-analysis{
+margin-right: 2rem;
+padding: 12rem;
+transition: all .3s ease;
+}
+.right .sales-analysis{
+margin-right: 2rem;
+padding: var(--card-padding);
+border-radius: var(--card-border-radius);
+}
+.right .sales-analysis:hover{
+    box-shadow: none;
+    background: linear-gradient(to right, #a3cef3, #fffde4);
+
+}
+
+.right .sales-analysis .items-info{
+    display: flex;
+    justify-content: space-around;
 }
